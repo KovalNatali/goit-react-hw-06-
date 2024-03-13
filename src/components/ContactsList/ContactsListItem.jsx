@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ContactsListItem = ({ name, number, onDeleteContact }) => {
   return (
     <li>

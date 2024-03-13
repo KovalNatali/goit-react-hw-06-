@@ -1,11 +1,10 @@
 import { TextField, Button } from "@mui/material";
-import { Form, Label } from "./AddContactForm.styled";
+import { Form, Label } from "../AddContastForm/AddContactForm.styled";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 import { useSelector, useDispatch } from "react-redux";
-import { addContact } from "components/redux/contacts/contacts-slice";
-import { getFilterContacts } from "components/redux/contacts/contacts-selector";
-// import { toast } from 'react-toastify';
+import { addContact } from "../redux/contacts/contacts-slice";
+import { getFilterContacts } from "../redux/contacts/contacts-selector";
 
 export const AddContastForm = () => {
   const [name, setName] = useState("");
