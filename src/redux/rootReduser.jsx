@@ -1,8 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
 
-import { constansReduser } from "../redux/contacts/contacts-slice";
-import { filterReduser } from "../redux/filter/filter-slice";
+import { constansReduser } from "../components/redux/contacts/contacts-slice";
+import { filterReduser } from "../components/redux/filter/filter-slice";
 import storage from "redux-persist/lib/storage";
 
 export const persistConfig = {
