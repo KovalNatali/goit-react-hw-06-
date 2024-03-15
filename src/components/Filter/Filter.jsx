@@ -1,6 +1,8 @@
 import { TextField } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { setFilter } from "../redux/filter/filter-slice";
+
+import { setFilter } from "../../redux/filtersSlice";
+
 export const Filter = () => {
   const dispatch = useDispatch();
   const handleChange = (e) => {
