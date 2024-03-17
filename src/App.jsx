@@ -1,6 +1,6 @@
-import { AddContastForm } from "./components/AddContastForm/AddContastForm";
+import { AddContastForm } from "./components/ContactForm/AddContastForm";
 import { Container } from "@mui/material";
-import { ContactsList } from "./components/ContactsList/ContactsList";
+import { ContactsList } from "./components/ContactList/ContactsList";
 import { Filter } from "./components/Filter/Filter";
 
 export const App = () => {

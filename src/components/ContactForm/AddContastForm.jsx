@@ -1,5 +1,5 @@
 import { TextField, Button } from "@mui/material";
-import { Form, Label } from "../AddContastForm/AddContactForm.styled";
+import { Form, Label } from "./AddContactForm.styled";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 import { useSelector, useDispatch } from "react-redux";
