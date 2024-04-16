@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-
+import { persistReducer } from "redux-persist";
 import {
   persistStore,
   FLUSH,
@@ -10,10 +10,18 @@ import {
   REGISTER,
 } from "redux-persist";
 
-import rootReduser from "./rootReduser";
+import storage from "redux-persist/lib/storage";
+import { contactsReducer } from "./contactsSlice";
+
+export const persistConfig = {
+  key: "contacts",
+  storage,
+  whitelist: ["contacts"],
+};
+const persistedReducer = persistReducer(persistConfig, contactsReducer);
 
 export const store = configureStore({
-  reducer: rootReduser,
+  reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
