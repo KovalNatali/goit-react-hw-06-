@@ -1,8 +1,9 @@
 import { AddContastForm } from "./components/ContactForm/ContactForm";
 import { Container } from "@mui/material";
-import { ContactsList } from "./components/ContactList/Contact";
-import { Filter } from "./components/Filter/SearchBox";
 
+import { ContactsList } from "./components/ContactList/ContactsList";
+
+import { Filter } from "./components/Filter/Filter";
 export const App = () => {
   return (
     <Container maxWidth="xl">

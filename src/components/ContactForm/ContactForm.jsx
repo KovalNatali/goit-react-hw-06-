@@ -1,9 +1,9 @@
 import { TextField, Button } from "@mui/material";
-import { Form, Label } from "./AddContactForm.styled";
+import { Form, Label } from "./ContactForm.styled";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 import { useSelector, useDispatch } from "react-redux";
-// import { addContact } from "../redux/contacts/contacts-slice";
+
 import { addContact } from "../../redux/contactsSlice";
 import { getFilterContacts } from "../../redux/contacts-selector";
 
